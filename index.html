@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #displayOrder {
+            max-width: 1050px;
+            margin: auto;
+            border: 1px solid red;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        #displayOrder>div {
+            width: 47%;
+            padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 8px;
+        }
+
+        #displayOrder>div>img {
+            width: 100%;
+        }
+
+        #displayOrder>div>p {
+            text-align: right;
+        }
+
+        #displayOrder>div>h2 {
+            position: relative;
+            bottom: 10px;
+            text-align: center;
+        }
+
+        form {
+            padding-top: 30px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .order-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: 2px solid orange;
+            border-radius: 5px;
+            color: #fff;
+            background-color: orange;
+            transition: background-color 0.3s ease;
+            margin: 25px 0;
+        }
+
+        .order-button:hover {
+            background-color: #2980b9;
+        }
+
+        @media screen and (max-width:550px) {
+            #displayOrder {
+                width: 98%;
+            }
+
+            #displayOrder>div {
+                width: 98%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Welcome to Local KFC</h1>
+        <div id="displayOrder"></div>
+        <form>
+            <input type="checkbox" name="Fulkopi Masala" id="Fulkopi_Masala">
+            <label for="Fulkopi_Masala">Fulkopi Masala
+            </label>&nbsp;&nbsp;
+            <input type="checkbox" name="Fry Bread" id="Fry_Bread">
+            <label for="Fry_Bread">Fry Bread
+            </label>&nbsp;&nbsp;
+            <input type="checkbox" name="Pizza" id="Pizza">
+            <label for="Pizza">Pizza
+            </label>&nbsp;&nbsp;
+            <input type="checkbox" name="Pasta" id="Pasta">
+            <label for="Pasta">Pasta
+            </label>&nbsp;&nbsp;
+            <input type="checkbox" name="Onion Burger" id="Onion_Burger">
+            <label for="Onion_Burger">Onion Burger
+            </label>&nbsp;&nbsp;
+            <input type="checkbox" name="Potatp Fry" id="Potatp_Fry">
+            <label for="Potatp_Fry">Potatp Fry
+            </label>
+            <br>
+            <button type="submit" class="order-button">Order Food</button>
+        </form>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
